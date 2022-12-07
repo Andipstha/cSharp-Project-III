@@ -21,32 +21,44 @@ namespace LMS
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            String username, password;
+            //String username, password;
 
-            username = usrTxt.Text;
-            password = passTxt.Text;
+            //username = usrTxt.Text;
+            //password = passTxt.Text;
 
-            try
+            //try
+            //{
+            //    String querry = "SELECT * FROM lmsAdmin WHERE username = '" +usrTxt.Text+ "' AND password = '" +passTxt+ "' ";
+            //    SqlDataAdapter sda = new SqlDataAdapter(querry, con);
+
+            //    DataTable dtable = new DataTable();
+            //    sda.Fill(dtable);
+            //    if(dtable.Rows.Count > 0)
+            //    {
+            //        username = usrTxt.Text;
+            //        password = passTxt.Text;
+            //        MessageBox.Show("Success!");
+            //        //Open new form
+            //        new Form2().Show();
+            //        this.Hide();
+
+            //    }
+            //}
+            //catch 
+            //{
+            //    MessageBox.Show("Error!");
+            //}
+            if (usrTxt.Text == "andipstha" && passTxt.Text == "123")
             {
-                String querry = "SELECT * FROM LMSAdmin WHERE username = '" +usrTxt.Text+ "' AND password = '" +passTxt+ "' ";
-                SqlDataAdapter sda = new SqlDataAdapter(querry, con);
-
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
-                if(dtable.Rows.Count > 0)
-                {
-                    username = usrTxt.Text;
-                    password = passTxt.Text;
-
-                    //Open new form
-                    new Form2().Show();
-                    this.Hide();
-
-                }
+                new Form2().Show();
+                this.Hide();
             }
-            catch 
+            else
             {
-                MessageBox.Show("Error!");
+                MessageBox.Show("The User name or password you entered is incorrect, Try again");
+                usrTxt.Clear();
+                passTxt.Clear();
+                usrTxt.Focus();
             }
         }
     }
