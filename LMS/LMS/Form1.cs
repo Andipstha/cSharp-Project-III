@@ -21,45 +21,51 @@ namespace LMS
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            //String username, password;
+            String username, password;
 
-            //username = usrTxt.Text;
-            //password = passTxt.Text;
+            username = usrTxt.Text;
+            password = passTxt.Text;
 
-            //try
-            //{
-            //    String querry = "SELECT * FROM lmsAdmin WHERE username = '" +usrTxt.Text+ "' AND password = '" +passTxt+ "' ";
-            //    SqlDataAdapter sda = new SqlDataAdapter(querry, con);
-
-            //    DataTable dtable = new DataTable();
-            //    sda.Fill(dtable);
-            //    if(dtable.Rows.Count > 0)
-            //    {
-            //        username = usrTxt.Text;
-            //        password = passTxt.Text;
-            //        MessageBox.Show("Success!");
-            //        //Open new form
-            //        new Form2().Show();
-            //        this.Hide();
-
-            //    }
-            //}
-            //catch 
-            //{
-            //    MessageBox.Show("Error!");
-            //}
-            if (usrTxt.Text == "andipstha" && passTxt.Text == "123")
+            try
             {
-                new Form2().Show();
-                this.Hide();
+                String querry = "SELECT * FROM lmsAdmin WHERE username = '" + usrTxt.Text + "' AND password = '" + passTxt.Text + "' ";
+                SqlDataAdapter sda = new SqlDataAdapter(querry, con);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+                if (dtable.Rows.Count > 0)
+                {
+                    username = usrTxt.Text;
+                    password = passTxt.Text;
+                    MessageBox.Show("Success!");
+                    //Open new form
+                    new Form2().Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    usrTxt.Clear();
+                    passTxt.Clear();
+                    usrTxt.Focus();
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("The User name or password you entered is incorrect, Try again");
-                usrTxt.Clear();
-                passTxt.Clear();
-                usrTxt.Focus();
+                MessageBox.Show("Error!");
             }
+            //if (usrTxt.Text == "andipstha" && passTxt.Text == "123")
+            //{
+            //    new Form2().Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("The User name or password you entered is incorrect, Try again");
+            //    usrTxt.Clear();
+            //    passTxt.Clear();
+            //    usrTxt.Focus()
+            //}
         }
     }
-}
+ }

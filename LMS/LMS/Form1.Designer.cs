@@ -40,13 +40,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(320, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(59, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "username";
             // 
             // usrTxt
             // 
-            this.usrTxt.Location = new System.Drawing.Point(384, 175);
+            this.usrTxt.Location = new System.Drawing.Point(382, 175);
             this.usrTxt.Name = "usrTxt";
             this.usrTxt.Size = new System.Drawing.Size(100, 23);
             this.usrTxt.TabIndex = 1;
@@ -63,15 +63,15 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(318, 217);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "password";
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(355, 267);
+            this.loginButton.Location = new System.Drawing.Point(382, 267);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.Size = new System.Drawing.Size(100, 23);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
