@@ -48,3 +48,4 @@ D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.dll
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\ref\LMS.dll
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.pdb
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.genruntimeconfig.cache
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Form3.resources
