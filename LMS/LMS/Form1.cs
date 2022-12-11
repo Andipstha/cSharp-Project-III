@@ -22,8 +22,8 @@ namespace LMS
         public Form1()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            //this.FormBorderStyle = FormBorderStyle.None;
+            button1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
     
 
@@ -65,7 +65,7 @@ namespace LMS
             //{
             //    MessageBox.Show("Error!");
             //}
-            if (usrTxt.Text == "andipstha" && passTxt.Text == "123")
+            if (usrTxt.Text == "admin" && passTxt.Text == "123")
             {
                 new Form2().Show();
                 this.Hide();
