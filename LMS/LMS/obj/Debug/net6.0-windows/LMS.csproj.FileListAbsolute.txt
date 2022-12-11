@@ -51,7 +51,6 @@ D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.genruntimeconf
 <<<<<<< HEAD
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Form3.resources
 =======
-D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\ref\LMS.dll
 D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\LMS.exe
 D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\LMS.deps.json
 D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\LMS.runtimeconfig.json
@@ -79,3 +78,5 @@ D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\ref\LMS.dl
 D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.pdb
 D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.genruntimeconfig.cache
 >>>>>>> a8bdbbabf2c26b7c377be1d1ba9287aa9417a0fc
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Properties.Resources.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.updateForm.resources

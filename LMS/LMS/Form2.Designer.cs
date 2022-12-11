@@ -53,6 +53,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Update Record";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -78,8 +79,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 82);
             this.button5.TabIndex = 0;
-            this.button5.Text = "Add Record";
+            this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form2
             // 
