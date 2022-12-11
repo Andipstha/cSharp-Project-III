@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj": {}
+    "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj": {}
   },
   "projects": {
-    "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj": {
+    "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
+        "projectUniqueName": "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
         "projectName": "LMS",
-        "projectPath": "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
+        "projectPath": "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
         "packagesPath": "C:\\Users\\student3\\.nuget\\packages\\",
-        "outputPath": "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\obj\\",
+        "outputPath": "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "F/JwFabjaM53OAOYkvKmI4WmcfOSAd1NeFfx68MD6IuXkOlYSYnAAptlK6I+VvSftLdyuDOjPnr9Zhu+IUVzvw==",
+=======
+  "dgSpecHash": "giDr9I0T8HkrfTtw+g26Pq/sg5M6eGkf+K3Q1Uj6KHedNJbIooeT0ucZfiLWxUuy8Tnj5NoGIGTS6kV7rqQvhg==",
+>>>>>>> a8bdbbabf2c26b7c377be1d1ba9287aa9417a0fc
   "success": true,
-  "projectFilePath": "D:\\SanDip\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
+  "projectFilePath": "D:\\Nelysa\\Project\\cSharp-Project-III\\LMS\\LMS\\LMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
