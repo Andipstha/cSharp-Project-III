@@ -63,6 +63,8 @@
             // 
             this.passTxt.Location = new System.Drawing.Point(936, 311);
             this.passTxt.Name = "passTxt";
+            this.passTxt.PasswordChar = '*';
+            this.passTxt.PlaceholderText = "Enter password";
             this.passTxt.Size = new System.Drawing.Size(165, 23);
             this.passTxt.TabIndex = 3;
             // 
