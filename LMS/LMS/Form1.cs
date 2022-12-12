@@ -22,8 +22,8 @@ namespace LMS
         public Form1()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            //this.FormBorderStyle = FormBorderStyle.None;
+            button1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
     
 
@@ -43,7 +43,33 @@ namespace LMS
             username = usrTxt.Text;
             password = passTxt.Text;
 
+<<<<<<< HEAD
             try
+=======
+            //try
+            //{
+            //    String querry = "SELECT * FROM lmsAdmin WHERE username = '" +usrTxt.Text+ "' AND password = '" +passTxt+ "' ";
+            //    SqlDataAdapter sda = new SqlDataAdapter(querry, con);
+
+            //    DataTable dtable = new DataTable();
+            //    sda.Fill(dtable);
+            //    if(dtable.Rows.Count > 0)
+            //    {
+            //        username = usrTxt.Text;
+            //        password = passTxt.Text;
+            //        MessageBox.Show("Success!");
+            //        //Open new form
+            //        new Form2().Show();
+            //        this.Hide();
+
+            //    }
+            //}
+            //catch 
+            //{
+            //    MessageBox.Show("Error!");
+            //}
+            if (usrTxt.Text == "admin" && passTxt.Text == "123")
+>>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
             {
                 String querry = "SELECT * FROM lmsAdmin WHERE username = '" + usrTxt.Text + "' AND password = '" + passTxt.Text + "' ";
                 SqlDataAdapter sda = new SqlDataAdapter(querry, con);

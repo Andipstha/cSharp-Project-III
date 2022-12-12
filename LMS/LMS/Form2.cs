@@ -17,6 +17,7 @@ namespace LMS
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         SqlConnection con = new SqlConnection(@"Data Source = .\SQLEXPRESS;
                                                 Initial Catalog=lms_database;
                                                 Integrated Security=True");
@@ -38,6 +39,11 @@ namespace LMS
             
             new updateForm().Show();
             this.Hide();
+=======
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+>>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
 
         }
     }
