@@ -80,3 +80,5 @@ D:\Nelysa\Project\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.genrun
 >>>>>>> a8bdbbabf2c26b7c377be1d1ba9287aa9417a0fc
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Properties.Resources.resources
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.updateForm.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\Guna.UI2.dll
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.loadForm.resources
