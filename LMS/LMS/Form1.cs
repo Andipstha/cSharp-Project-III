@@ -1,4 +1,7 @@
+using System;
 using System.Data;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using System.Data.SqlClient;
 
 
@@ -6,10 +9,24 @@ namespace LMS
 {
     public partial class Form1 : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // width of ellipse
+            int nHeightEllipse // height of ellipse
+        );
         public Form1()
         {
             InitializeComponent();
+            //this.FormBorderStyle = FormBorderStyle.None;
+            button1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
+    
+
         SqlConnection con = new SqlConnection(@"Data Source = .\SQLEXPRESS;
                                                 Initial Catalog=lms_database;
                                                 Integrated Security=True");
@@ -48,7 +65,7 @@ namespace LMS
             //{
             //    MessageBox.Show("Error!");
             //}
-            if (usrTxt.Text == "andipstha" && passTxt.Text == "123")
+            if (usrTxt.Text == "admin" && passTxt.Text == "123")
             {
                 new Form2().Show();
                 this.Hide();
@@ -60,6 +77,16 @@ namespace LMS
                 passTxt.Clear();
                 usrTxt.Focus();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
