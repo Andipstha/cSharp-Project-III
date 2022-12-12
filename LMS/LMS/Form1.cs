@@ -23,7 +23,7 @@ namespace LMS
         {
             InitializeComponent();
             //this.FormBorderStyle = FormBorderStyle.None;
-            button1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            //button1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
     
 
