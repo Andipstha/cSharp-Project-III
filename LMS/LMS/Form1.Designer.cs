@@ -32,14 +32,8 @@
             this.passTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.LOGIN = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.loginButton = new System.Windows.Forms.Button();
             this.usrTxt = new System.Windows.Forms.TextBox();
-=======
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
->>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
             this.SuspendLayout();
             // 
             // label1
@@ -57,13 +51,7 @@
             // 
             this.passTxt.Location = new System.Drawing.Point(146, 266);
             this.passTxt.Name = "passTxt";
-<<<<<<< HEAD
             this.passTxt.Size = new System.Drawing.Size(168, 23);
-=======
-            this.passTxt.PasswordChar = '*';
-            this.passTxt.PlaceholderText = "Enter password";
-            this.passTxt.Size = new System.Drawing.Size(165, 23);
->>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
             this.passTxt.TabIndex = 3;
             // 
             // label2
@@ -105,16 +93,16 @@
             this.usrTxt.Name = "usrTxt";
             this.usrTxt.Size = new System.Drawing.Size(165, 23);
             this.usrTxt.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Location = new System.Drawing.Point(857, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(343, 410);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            //// 
+            //// button2
+            //// 
+            //this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            //this.button2.Location = new System.Drawing.Point(857, 92);
+            //this.button2.Name = "button2";
+            //this.button2.Size = new System.Drawing.Size(343, 410);
+            //this.button2.TabIndex = 10;
+            //this.button2.Text = "button2";
+            //this.button2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -129,11 +117,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.usrTxt);
             this.Controls.Add(this.label1);
-<<<<<<< HEAD
-=======
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
->>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
+
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -148,12 +132,7 @@
         private TextBox passTxt;
         private Label label2;
         private Label LOGIN;
-<<<<<<< HEAD
         private Button loginButton;
         private TextBox usrTxt;
-=======
-        private Button button1;
-        private Button button2;
->>>>>>> e8a16c6603b716a8a9ab7b212f7eb6d56a1e55f3
     }
 }
