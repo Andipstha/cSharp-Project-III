@@ -37,7 +37,7 @@ namespace LMS
         private void button2_Click(object sender, EventArgs e)
         {
 
-            new updateForm().Show();
+            new UpdateForm().Show();
             this.Hide();
         }
         private void Form2_Load(object sender, EventArgs e)
@@ -47,7 +47,8 @@ namespace LMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            new DeleteForm().Show();
+            this.Hide();
         }
     }
 }

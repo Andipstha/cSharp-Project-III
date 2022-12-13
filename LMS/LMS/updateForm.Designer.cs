@@ -1,6 +1,6 @@
 ﻿namespace LMS
 {
-    partial class updateForm
+    partial class UpdateForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,12 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 60);
+            this.label2.Location = new System.Drawing.Point(54, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 15);
             this.label2.TabIndex = 0;
@@ -60,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(173, 60);
+            this.label3.Location = new System.Drawing.Point(218, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 15);
             this.label3.TabIndex = 0;
@@ -69,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 24);
+            this.label4.Location = new System.Drawing.Point(12, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 15);
             this.label4.TabIndex = 0;
@@ -86,14 +92,14 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(54, 78);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.Size = new System.Drawing.Size(158, 23);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(173, 78);
+            this.textBox3.Location = new System.Drawing.Point(218, 78);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.Size = new System.Drawing.Size(172, 23);
             this.textBox3.TabIndex = 1;
             // 
             // button1
@@ -108,18 +114,55 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(93, 107);
+            this.button2.Location = new System.Drawing.Point(315, 107);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "return";
+            this.button2.Text = "back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // updateForm
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sn,
+            this.name,
+            this.author,
+            this.bid});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 136);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(378, 268);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // sn
+            // 
+            this.sn.HeaderText = "sn";
+            this.sn.Name = "sn";
+            // 
+            // name
+            // 
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            // 
+            // author
+            // 
+            this.author.HeaderText = "author";
+            this.author.Name = "author";
+            // 
+            // bid
+            // 
+            this.bid.HeaderText = "bid";
+            this.bid.Name = "bid";
+            this.bid.Visible = false;
+            // 
+            // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
@@ -129,8 +172,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "updateForm";
+            this.Name = "UpdateForm";
             this.Text = "updateForm";
+            this.Load += new System.EventHandler(this.UpdateForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +192,10 @@
         private TextBox textBox3;
         private Button button1;
         private Button button2;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn sn;
+        private DataGridViewTextBoxColumn name;
+        private DataGridViewTextBoxColumn author;
+        private DataGridViewTextBoxColumn bid;
     }
 }

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace LMS
@@ -23,6 +15,24 @@ namespace LMS
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            DisplayData();
+        }
+        void DisplayData()
+        {
+            dataGridView1.Rows.Clear();
+            string query = "select * from booksdetail";
+            SqlCommand command = new SqlCommand(query, con);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            int sn = 1;
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                string id = table.Rows[i]["bid"].ToString();
+                string name = table.Rows[i]["btitle"].ToString();
+                string author = table.Rows[i]["bauthor"].ToString();
+                dataGridView1.Rows.Add(sn++, name, author);
+            }
 
         }
 
@@ -47,11 +57,23 @@ namespace LMS
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("saved successfully");
                 con.Close();
+                DisplayData();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            //Display
+       
+
+            
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Close();
+            
         }
     }
 }
