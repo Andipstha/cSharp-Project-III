@@ -1,0 +1,11 @@
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.Form1.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.Form2.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.Form3.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.Properties.Resources.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.updateForm.resources
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.csproj.GenerateResource.cache
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.GeneratedMSBuildEditorConfig.editorconfig
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.AssemblyInfoInputs.cache
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.AssemblyInfo.cs
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.csproj.CoreCompileInputs.cache
+D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net5.0-windows\LMS.csproj.AssemblyReference.cache

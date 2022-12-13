@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LMS
 {
@@ -15,6 +16,39 @@ namespace LMS
         public Form2()
         {
             InitializeComponent();
+        }
+
+        SqlConnection con = new SqlConnection(@"Data Source = .\SQLEXPRESS;
+                                                Initial Catalog=lms_database;
+                                                Integrated Security=True");
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            new UpdateForm().Show();
+            this.Hide();
+        }
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new DeleteForm().Show();
+            this.Hide();
         }
     }
 }
