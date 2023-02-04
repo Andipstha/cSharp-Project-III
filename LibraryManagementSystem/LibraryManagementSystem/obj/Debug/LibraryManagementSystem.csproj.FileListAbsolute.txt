@@ -27,3 +27,6 @@
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ViewStudentinformation.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.IssueBooks.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBook.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.CompleteBookDetails.resources

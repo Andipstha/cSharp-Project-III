@@ -203,6 +203,26 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_male_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-male-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_male_1002 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-male-1002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_student_male_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-student-male-50", resourceCulture);
@@ -216,6 +236,16 @@ namespace LibraryManagementSystem.Properties {
         internal static System.Drawing.Bitmap icons8_view_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-view-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap issueBook {
+            get {
+                object obj = ResourceManager.GetObject("issueBook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

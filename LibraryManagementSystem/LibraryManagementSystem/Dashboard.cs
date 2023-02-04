@@ -59,5 +59,25 @@ namespace LibraryManagementSystem
             ViewStudentinformation vsi = new ViewStudentinformation();
             vsi.Show();
         }
+
+        private void issueBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IssueBooks ib = new IssueBooks();
+            ib.Show();
+        }
+
+        private void returnBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReturnBook rb = new ReturnBook();
+            rb.Show();
+        }
+
+        private void completeBookDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompleteBookDetails cbd = new CompleteBookDetails();
+            cbd.Show();
+
+
+        }
     }
 }

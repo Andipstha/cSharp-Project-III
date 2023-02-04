@@ -102,14 +102,14 @@
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
             // viewStudentToolStripMenuItem
             // 
             this.viewStudentToolStripMenuItem.Name = "viewStudentToolStripMenuItem";
-            this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.viewStudentToolStripMenuItem.Text = "View Student";
             this.viewStudentToolStripMenuItem.Click += new System.EventHandler(this.viewStudentToolStripMenuItem_Click);
             // 
@@ -120,6 +120,7 @@
             this.issueBooksToolStripMenuItem.Name = "issueBooksToolStripMenuItem";
             this.issueBooksToolStripMenuItem.Size = new System.Drawing.Size(149, 54);
             this.issueBooksToolStripMenuItem.Text = "Issue Books";
+            this.issueBooksToolStripMenuItem.Click += new System.EventHandler(this.issueBooksToolStripMenuItem_Click);
             // 
             // returnBooksToolStripMenuItem
             // 
@@ -128,6 +129,7 @@
             this.returnBooksToolStripMenuItem.Name = "returnBooksToolStripMenuItem";
             this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(160, 54);
             this.returnBooksToolStripMenuItem.Text = "Return Books";
+            this.returnBooksToolStripMenuItem.Click += new System.EventHandler(this.returnBooksToolStripMenuItem_Click);
             // 
             // completeBookDetailToolStripMenuItem
             // 
@@ -136,6 +138,7 @@
             this.completeBookDetailToolStripMenuItem.Name = "completeBookDetailToolStripMenuItem";
             this.completeBookDetailToolStripMenuItem.Size = new System.Drawing.Size(220, 54);
             this.completeBookDetailToolStripMenuItem.Text = "Complete Book Detail";
+            this.completeBookDetailToolStripMenuItem.Click += new System.EventHandler(this.completeBookDetailToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
