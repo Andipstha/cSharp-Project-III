@@ -53,5 +53,11 @@ namespace LibraryManagementSystem
             AddStudent ast = new AddStudent();
             ast.Show();
         }
+
+        private void viewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewStudentinformation vsi = new ViewStudentinformation();
+            vsi.Show();
+        }
     }
 }

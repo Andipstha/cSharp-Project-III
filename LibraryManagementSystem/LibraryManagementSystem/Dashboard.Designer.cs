@@ -111,6 +111,7 @@
             this.viewStudentToolStripMenuItem.Name = "viewStudentToolStripMenuItem";
             this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewStudentToolStripMenuItem.Text = "View Student";
+            this.viewStudentToolStripMenuItem.Click += new System.EventHandler(this.viewStudentToolStripMenuItem_Click);
             // 
             // issueBooksToolStripMenuItem
             // 
