@@ -83,3 +83,9 @@ D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.updateForm.res
 D:\SanDip\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\Guna.UI2.dll
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.loadForm.resources
 D:\SanDip\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.DeleteForm.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\bin\Debug\net6.0-windows\Guna.UI2.dll
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.DeleteForm.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Form3.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.loadForm.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.Properties.Resources.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LMS\LMS\obj\Debug\net6.0-windows\LMS.UpdateForm.resources

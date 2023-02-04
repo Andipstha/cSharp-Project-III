@@ -1,0 +1,14 @@
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form1.resources
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Dashboard.resources
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddBooks.resources
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ViewBook.resources
+\\Mac\Home\Downloads\cSharp-project\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddStudent.resources
