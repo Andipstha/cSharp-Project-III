@@ -19,7 +19,6 @@
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddBooks.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddStudent.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Dashboard.resources
-\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form1.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ViewBook.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
@@ -30,3 +29,11 @@
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.IssueBooks.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBook.resources
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.CompleteBookDetails.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.LoadScreen.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Login.resources
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\Bunifu.UI.WinForms.xml
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\Newtonsoft.Json.xml
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\RestSharp.xml
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.Fody.CopyLocal.cache
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CopyComplete
