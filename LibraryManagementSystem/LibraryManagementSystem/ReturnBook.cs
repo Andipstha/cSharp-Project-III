@@ -78,8 +78,15 @@ namespace LibraryManagementSystem
             con.Open();
 
             cmd.CommandText = "update IRBook set book_return_date = '"+ dateTimePicker1.Text +"' where std_enroll = '"+ txtEnterEnroll.Text +"' and id = "+ rowid +" ";
-
             cmd.ExecuteNonQuery();
+
+            //Increase reutrn book
+            SqlCommand cmd1 = new SqlCommand();
+            cmd1.Connection = con;
+            cmd1.CommandText = "update NewBook set bQuan = bQuan+1 where bname =  '" + bName + "'  ";
+            cmd1.ExecuteNonQuery();
+
+
             con.Close();
 
             MessageBox.Show("Returned Succesful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

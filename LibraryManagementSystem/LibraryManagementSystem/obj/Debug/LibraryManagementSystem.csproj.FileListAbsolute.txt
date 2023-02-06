@@ -37,3 +37,4 @@
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\RestSharp.xml
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.Fody.CopyLocal.cache
 \\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CopyComplete
+\\Mac\Home\Downloads\GitHub\cSharp-Project-III\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.mainDashboard.resources

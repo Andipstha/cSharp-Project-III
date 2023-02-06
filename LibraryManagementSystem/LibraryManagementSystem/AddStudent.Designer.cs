@@ -32,6 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.image1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -47,8 +49,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.image1 = new System.Windows.Forms.PictureBox();
-            this.btnUpload = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,6 +57,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -87,6 +89,9 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btnUpload);
             this.panel2.Controls.Add(this.image1);
@@ -109,6 +114,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(949, 605);
             this.panel2.TabIndex = 2;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnUpload.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnUpload.FlatAppearance.BorderSize = 0;
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.btnUpload.ForeColor = System.Drawing.Color.White;
+            this.btnUpload.Location = new System.Drawing.Point(645, 321);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(200, 40);
+            this.btnUpload.TabIndex = 11;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // image1
+            // 
+            this.image1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.image1.Location = new System.Drawing.Point(645, 115);
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(200, 200);
+            this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.image1.TabIndex = 10;
+            this.image1.TabStop = false;
             // 
             // btnExit
             // 
@@ -262,30 +293,6 @@
             this.label2.Size = new System.Drawing.Size(138, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "Student Name";
-            // 
-            // image1
-            // 
-            this.image1.Location = new System.Drawing.Point(645, 115);
-            this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(200, 200);
-            this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.image1.TabIndex = 10;
-            this.image1.TabStop = false;
-            // 
-            // btnUpload
-            // 
-            this.btnUpload.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnUpload.FlatAppearance.BorderSize = 0;
-            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpload.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(645, 321);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(200, 40);
-            this.btnUpload.TabIndex = 11;
-            this.btnUpload.Text = "Upload";
-            this.btnUpload.UseVisualStyleBackColor = false;
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // AddStudent
             // 

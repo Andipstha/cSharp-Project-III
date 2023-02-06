@@ -15,6 +15,7 @@ namespace LibraryManagementSystem
         public Dashboard()
         {
             InitializeComponent();
+            loadform(new mainDashboard());
         }
 
         public void loadform(object Form)
@@ -40,27 +41,30 @@ namespace LibraryManagementSystem
             
         }
 
-        public static int restrict = 0;
+        //public static int restrict = 0;
 
         private void addNewBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(restrict == 0)
-            {
-                restrict++;
-                AddBooks abs = new AddBooks();
-                abs.TopMost = true;
-                abs.Show();
-            }
-            else
-            {
-                MessageBox.Show("Form is already opened");
-            }
+            //if(restrict == 0)
+            //{
+            //    restrict++;
+            //    AddBooks abs = new AddBooks();
+            //    abs.TopMost = true;
+            //    abs.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Form is already opened");
+            //}
+
+            loadform(new AddBooks());
         }
 
         private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewBook vb = new ViewBook();
-            vb.Show();
+            //ViewBook vb = new ViewBook();
+            //vb.Show();
+            loadform(new ViewBook());
         }
         /*Add Student*/
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
@@ -99,6 +103,11 @@ namespace LibraryManagementSystem
             loadform(new CompleteBookDetails());
 
 
+        }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            loadform(new mainDashboard());
         }
     }
 }

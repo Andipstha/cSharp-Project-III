@@ -1,10 +1,12 @@
 ﻿using LibraryManagementSystem.Properties;
+using RestSharp.Extensions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -23,48 +25,7 @@ namespace LibraryManagementSystem
 
         private void txtSearchEnrollment_TextChanged(object sender, EventArgs e)
         {
-            if (txtSearchEnrollment.Text != "")
-            {
-                label1.Visible = false;
-                //Image image = Image.FromFile ("//Mac/Home/Downloads/GitHub/cSharp - Project - III/LibraryManagementSystem/LibraryManagementSystem/Resources/search1.gif");
-                Image image = Image.FromFile ("C:/Users/sandipshrestha/Downloads/image/search1.gif");
-                pictureBox1.Image = image;
 
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = @"Data Source = .\SQLEXPRESS;
-                                                Initial Catalog=LibraryDBS;
-                                                Integrated Security=True";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-
-                cmd.CommandText = "select * from NewStudent where enroll LIKE '"+txtSearchEnrollment.Text+"%' ";
-                SqlDataAdapter DA = new SqlDataAdapter(cmd);
-                DataSet DS = new DataSet();
-                DA.Fill(DS);
-
-                dataGridView1.DataSource = DS.Tables[0];
-            }
-            else
-            {
-                label1.Visible = true;
-                Image image = Image.FromFile("C:/Users/sandipshrestha/Downloads/image/search.gif");
-                pictureBox1.Image = image;
-
-                /*Connection to SqlDatabase*/
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = @"Data Source = .\SQLEXPRESS;
-                                                Initial Catalog=LibraryDBS;
-                                                Integrated Security=True";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
-
-                cmd.CommandText = "select * from NewStudent";
-                SqlDataAdapter DA = new SqlDataAdapter(cmd);
-                DataSet DS = new DataSet();
-                DA.Fill(DS);
-
-                dataGridView1.DataSource = DS.Tables[0];
-            }
         }
 
         private void ViewStudentinformation_Load(object sender, EventArgs e)
@@ -118,6 +79,7 @@ namespace LibraryManagementSystem
             txtSemester.Text = DS.Tables[0].Rows[0][4].ToString();
             txtContact.Text = DS.Tables[0].Rows[0][5].ToString();
             txtEmail.Text = DS.Tables[0].Rows[0][6].ToString();
+            //image2.Image = DS.Tables[0].Rows[0][7].Image();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -138,7 +100,13 @@ namespace LibraryManagementSystem
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "update NewStudent set sname = '" + sname + "' , enroll = '" + enroll + "' , dep = '" + dep + "' , sem = '" + sem + "' , contact = '" + contact + "' , email = '" + semail + "' where stuid = " + rowid + " ";
+                cmd.CommandText = "update NewStudent set sname = '" + sname + "' , enroll = '" + enroll + "' , dep = '" + dep + "' , sem = '" + sem + "' , contact = '" + contact + "' , email = '" + semail + "' , image = @image where stuid = " + rowid + " ";
+                MemoryStream memstr = new MemoryStream();
+
+
+                pictureBox1.Image.Save(memstr, image2.Image.RawFormat);
+                cmd.Parameters.AddWithValue("image", memstr.ToArray());
+
                 SqlDataAdapter DA = new SqlDataAdapter(cmd);
                 DataSet DS = new DataSet();
                 DA.Fill(DS);
@@ -177,6 +145,26 @@ namespace LibraryManagementSystem
             if(MessageBox.Show("Unsaved Data Will Be Lost.","Are You Sure?",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 this.Close();
+            }
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            String imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)|*.png| ALL Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    image2.ImageLocation = imageLocation;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

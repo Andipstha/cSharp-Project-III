@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.IO;
 
 namespace LibraryManagementSystem
 {
@@ -48,6 +49,9 @@ namespace LibraryManagementSystem
                 String sem = txtSemester.Text;
                 Int64 mobile = Int64.Parse(txtContact.Text);
                 String email = txtEmail.Text;
+                //byte[] image = image1.Image;
+
+
 
                 /*Connection to SqlDatabase*/
                 SqlConnection con = new SqlConnection();
@@ -58,7 +62,14 @@ namespace LibraryManagementSystem
                 cmd.Connection = con;
 
                 con.Open();
-                cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "')";
+                cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email,image) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "',@image)";
+
+                /*Save Image File*/
+                MemoryStream memstr = new MemoryStream();
+                image1.Image.Save(memstr, image1.Image.RawFormat);
+                cmd.Parameters.AddWithValue("image", memstr.ToArray());
+                /*End of Save Image File*/
+
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Data Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

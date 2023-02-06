@@ -118,15 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAArCAYAAACehfZdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACxSURBVHhe7dRRCQMxAETB+FeVIzIqowJaAuHBacgM7M8K
-        eAPgZa31mXP+zOzO7QacHIyxD+BeuwEnB4IAtxMEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQ
-        QQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCA
-        CAIQQQDyCsLzPN99mNmd2w04OQDYxvgDP1H1ZQKVELcAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQQAAAA2CAYAAAAhzecYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -136,13 +127,23 @@
         ADEEIIYAxBCAGAIQQwBiCEAMAYghADEEILOOuf8CsJd1zP0Cjr5IMA/2B7UAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="txtPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAYgAAAAtCAYAAAC05fzPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADNSURBVHhe7dWxDQMhAARBSqO07xyDRfLWuoMZ6ZJrYAcA
+        /LXWmnuPmZnZ3rx5+AbiHABwPDcPAgHAi0AAkAQCgCQQACSBACAJBABJIABIAgFAEggAkkAAkAQCgCQQ
+        ACSBACAJBABJIABIAgFAEggAkkAAkAQCgCQQACSBACAJBABJIABIAgFAEggAkkAAkAQCgCQQACSBACAJ
+        BABJIABIAgFAEggAkkAAkAQCgCQQACSBACAJBABJIABIAgFAegVinsPMzGxv3jwAwK8xPt4xZIRL/Gb6
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="txtUsername.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAArCAYAAACehfZdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACxSURBVHhe7dRRCQMxAETB+FeVIzIqowJaAuHBacgM7M8K
-        eAPgZa31mXP+zOzO7QacHIyxD+BeuwEnB4IAtxMEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQ
-        QQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCA
-        CAIQQQDyCsLzPN99mNmd2w04OQDYxvgDP1H1ZQKVELcAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAYgAAAAoCAYAAADkKG18AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC1SURBVHhe7dWxDYAwEARBSnNpdP5gEhxsCTPSSdfBXjOz
+        3t1mZmbH1g7EPgBwugUCgCIQACSBACAJBABJIABIAgFAEggAkkAAkAQCgCQQACSBACAJBABJIABIAgFA
+        EggAkkAAkAQCgCQQACSBACAJBABJIABIAgFAEggAkkAAkAQCgCQQACSBACAJBABJIABIAgFAEggAkkAA
+        kAQCgCQQACSBACAJBABJIABIXyDWPmZmZv9mPaF9bYsTkPHmAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

@@ -119,8 +119,15 @@ namespace LibraryManagementSystem
 
                     cmd.CommandText = "insert into IRbook (std_enroll, std_name, std_dep, std_sem, std_contact, std_email, book_name, book_issue_date) values ('"+ enroll +"' , '"+ sname +"' , '"+ sdep +"' , '"+ sem +"' , "+ contact +" , '"+ email +"' , '"+ bookname +"' , '"+ bookIssueDate +"') ";
                     cmd.ExecuteNonQuery();
+
+                    //Decrease issued book
+                    SqlCommand cmd1 = new SqlCommand();
+                    cmd1.Connection = con;
+                    cmd1.CommandText = "update NewBook set bQuan = bQuan-1 where bname =  '"+ bookname +"'  ";
+                    cmd1.ExecuteNonQuery();
+                    
                     con.Close();
-                    MessageBox.Show("Book Issued.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Book Issued.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {

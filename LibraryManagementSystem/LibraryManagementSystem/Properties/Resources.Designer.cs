@@ -153,6 +153,16 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dashBoard_dash {
+            get {
+                object obj = ResourceManager.GetObject("dashBoard-dash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_dash {
             get {
                 object obj = ResourceManager.GetObject("exit-dash", resourceCulture);
@@ -323,6 +333,36 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap literature {
+            get {
+                object obj = ResourceManager.GetObject("literature", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap literature_2 {
+            get {
+                object obj = ResourceManager.GetObject("literature-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_dash {
+            get {
+                object obj = ResourceManager.GetObject("lock-dash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_small {
             get {
                 object obj = ResourceManager.GetObject("logo_small", resourceCulture);
@@ -376,6 +416,16 @@ namespace LibraryManagementSystem.Properties {
         internal static System.Drawing.Bitmap studentView_dash {
             get {
                 object obj = ResourceManager.GetObject("studentView-dash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_dash {
+            get {
+                object obj = ResourceManager.GetObject("user-dash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
