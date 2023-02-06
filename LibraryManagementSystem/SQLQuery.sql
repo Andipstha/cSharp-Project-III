@@ -50,4 +50,7 @@
 --book_return_date varchar(250),
 --);
 
+--std_enroll, std_name, std_dep, std_sem, std_contact, std_email, book_name, book_issue_date, book_return_date
 
+
+select * from IRbook

@@ -17,6 +17,20 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
+        public void loadform(object Form)
+        {
+            if (mainPanel.Controls.Count > 0)
+
+                this.mainPanel.Controls.RemoveAt(0);
+
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainPanel.Controls.Add(f);
+            this.mainPanel.Tag = f;
+            f.Show();
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Are you Sure you want to Exit?","Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
@@ -51,32 +65,38 @@ namespace LibraryManagementSystem
         /*Add Student*/
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddStudent ast = new AddStudent();
-            ast.Show();
+            //AddStudent ast = new AddStudent();
+            //ast.Show();
+            loadform(new AddStudent());
         }
 
         private void viewStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewStudentinformation vsi = new ViewStudentinformation();
-            vsi.Show();
+            //ViewStudentinformation vsi = new ViewStudentinformation();
+            //vsi.Show();
+            loadform(new ViewStudentinformation());
         }
 
         private void issueBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IssueBooks ib = new IssueBooks();
-            ib.Show();
+            //IssueBooks ib = new IssueBooks();
+            //ib.Show();
+            loadform(new IssueBooks());
         }
 
         private void returnBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReturnBook rb = new ReturnBook();
-            rb.Show();
+            //ReturnBook rb = new ReturnBook();
+            //rb.Show();
+            loadform(new ReturnBook());
         }
 
         private void completeBookDetailToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CompleteBookDetails cbd = new CompleteBookDetails();
-            cbd.Show();
+            
+            //CompleteBookDetails cbd = new CompleteBookDetails();
+            //cbd.Show();
+            loadform(new CompleteBookDetails());
 
 
         }
