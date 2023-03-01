@@ -77,6 +77,7 @@ namespace LibraryManagementSystem
             panel2.Visible = false;
         }
 
+        /*Search Book by Book Name*/
         private void txtBookName_TextChanged(object sender, EventArgs e)
         {
             if(txtBookName.Text != "")

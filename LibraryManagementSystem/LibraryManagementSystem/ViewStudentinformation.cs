@@ -40,7 +40,9 @@ namespace LibraryManagementSystem
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "select * from NewStudent";
+            //cmd.CommandText = "select * from NewStudent ";
+            cmd.CommandText = "select * from NewStudent where hidden = 1 ";
+
             SqlDataAdapter DA = new SqlDataAdapter(cmd);
             DataSet DS = new DataSet();
             DA.Fill(DS);
@@ -130,8 +132,10 @@ namespace LibraryManagementSystem
                                                 Integrated Security=True";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
+                //UPDATE NewStudent SET hidden = 1 WHERE hidden = 0;
+                //cmd.CommandText = " delete from NewStudent where stuid = "+rowid+" ";
+                cmd.CommandText = " update NewStudent set hidden = 0 where stuid = " + rowid + " ";
 
-                cmd.CommandText = " delete from NewStudent where stuid = "+rowid+" ";
                 SqlDataAdapter DA = new SqlDataAdapter(cmd);
                 DataSet DS = new DataSet();
                 DA.Fill(DS);

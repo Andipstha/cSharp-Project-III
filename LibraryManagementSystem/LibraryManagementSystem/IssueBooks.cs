@@ -76,7 +76,7 @@ namespace LibraryManagementSystem
                 if (DS.Tables[0].Rows.Count !=0)
                 {
                     txtName.Text = DS.Tables[0].Rows[0][1].ToString();
-                    txtDep.Text = DS.Tables[0].Rows[0][2].ToString();
+                    txtDep.Text = DS.Tables[0].Rows[0][3].ToString();
                     txtSem.Text = DS.Tables[0].Rows[0][4].ToString();
                     txtContact.Text = DS.Tables[0].Rows[0][5].ToString();
                     txtEmail.Text = DS.Tables[0].Rows[0][6].ToString();
@@ -164,6 +164,13 @@ namespace LibraryManagementSystem
                 this.Close();
             }
             
+        }
+
+        private void ScanId_Click(object sender, EventArgs e)
+        {
+            BarCodeSC bcsc = new BarCodeSC();
+            bcsc.ShowDialog();
+            txtEnrollement.Text = myGlobal.test;
         }
     }
 }

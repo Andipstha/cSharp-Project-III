@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtLoad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -132,6 +133,17 @@
             this.panel1.Size = new System.Drawing.Size(800, 250);
             this.panel1.TabIndex = 5;
             // 
+            // txtLoad
+            // 
+            this.txtLoad.AutoSize = true;
+            this.txtLoad.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoad.ForeColor = System.Drawing.Color.White;
+            this.txtLoad.Location = new System.Drawing.Point(95, 350);
+            this.txtLoad.Name = "txtLoad";
+            this.txtLoad.Size = new System.Drawing.Size(152, 27);
+            this.txtLoad.TabIndex = 3;
+            this.txtLoad.Text = "Version 1.0.0";
+            // 
             // LoadScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,6 +151,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(173)))));
             this.ClientSize = new System.Drawing.Size(800, 412);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtLoad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Percentage);
@@ -166,5 +179,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label txtLoad;
     }
 }

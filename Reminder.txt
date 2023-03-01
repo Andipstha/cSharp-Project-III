@@ -1,0 +1,17 @@
+After changing package 
+update-package -reinstall
+run above command on package manager console
+____________________________________________
+get data from different form
+
+____________________________________________
+
+Added global class and send data from different form
+
+Not to use delete query 
+Add flag to the table
+
+Add new column name as hidden  
+>if hidden = 0 hide else show
+
+Image resolution or width

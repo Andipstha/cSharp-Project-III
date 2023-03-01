@@ -40,7 +40,51 @@ namespace LibraryManagementSystem
             da1.Fill(ds1);
 
             dataGridView2.DataSource = ds1.Tables[0];
+          
 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            txtBookName.Clear();
+        }
+
+        private void txtBookName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBookName.Text != "")
+            {
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = @"Data Source = .\SQLEXPRESS;
+                                                Initial Catalog=LibraryDBS;
+                                                Integrated Security=True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                cmd.CommandText = "select * from IRbook where std_enroll LIKE '" + txtBookName.Text + "%' ";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                dataGridView1.DataSource = ds.Tables[0];
+                dataGridView2.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = @"Data Source = .\SQLEXPRESS;
+                                                Initial Catalog=LibraryDBS;
+                                                Integrated Security=True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                cmd.CommandText = "select * from IRbook";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                dataGridView1.DataSource = ds.Tables[0];
+                dataGridView2.DataSource = ds.Tables[0];
+            }
         }
     }
 }

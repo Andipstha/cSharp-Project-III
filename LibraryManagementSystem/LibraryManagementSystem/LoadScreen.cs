@@ -31,6 +31,14 @@ namespace LibraryManagementSystem
                 log.Show();
                 this.Hide();
             }
+            if (startpoint == 2)
+            {
+                txtLoad.Text = "Creating Database";
+            }
+            if (startpoint == 50)
+            {
+                txtLoad.Text = "Database Created";
+            }
         }
 
         private void LoadScreen_Load(object sender, EventArgs e)

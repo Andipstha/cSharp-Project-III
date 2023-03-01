@@ -65,10 +65,73 @@ namespace LibraryManagementSystem
             }
             txtBookName.Text = bName;
             txtBookIssueDate.Text = bDate;
+
+            //fine 
+
+            DateTime FirstDate = Convert.ToDateTime(txtBookIssueDate.Text.ToString());
+            DateTime SecondDate = dateTimePicker1.Value;
+
+
+            TimeSpan ts = SecondDate - FirstDate;
+
+            int differenceInDays = ts.Days;
+            if (differenceInDays > 30)
+            {
+                int fine = (differenceInDays - 30) * 2;
+                textBox1.Text = fine.ToString();
+            }
+            else
+            {
+                int fine = 0;
+                textBox1.Text = fine.ToString();
+            }
+            //int fine = differenceInDays * 2;
+
+            textBox2.Text = differenceInDays.ToString();
+
+
+            Console.WriteLine("Difference in days: {0}", differenceInDays);
+
+            //fine end
+
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            
+            ////fine 
+
+            //DataGridViewRow data = dataGridView1.CurrentRow;
+
+            ////DateTime FirstDate = Convert.ToDateTime(data.Cells["book_issue_date"].Value.ToString());
+            ////DateTime SecondDate = data.Cells["book_return_date"].Value.ToString() != "" ? Convert.ToDateTime(data.Cells["book_return_date"].Value.ToString()) : DateTime.Now;
+
+            //DateTime FirstDate = Convert.ToDateTime(txtBookIssueDate.Text.ToString());
+            //DateTime SecondDate = dateTimePicker1.Value;
+ 
+
+            //TimeSpan ts = SecondDate - FirstDate;
+
+            //int differenceInDays = ts.Days;
+            //if (differenceInDays > 30)
+            //{
+            //    int fine = (differenceInDays - 30) * 2;
+            //    textBox1.Text = fine.ToString();
+            //}
+            //else
+            //{
+            //    int fine = 0;
+            //    textBox1.Text = fine.ToString();
+            //}
+            ////int fine = differenceInDays * 2;
+
+            //textBox2.Text = differenceInDays.ToString();
+
+
+            //Console.WriteLine("Difference in days: {0}", differenceInDays);
+
+            ////fine end
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = @"Data Source = .\SQLEXPRESS;
                                                 Initial Catalog=LibraryDBS;
@@ -77,8 +140,10 @@ namespace LibraryManagementSystem
             cmd.Connection = con;
             con.Open();
 
-            cmd.CommandText = "update IRBook set book_return_date = '"+ dateTimePicker1.Text +"' where std_enroll = '"+ txtEnterEnroll.Text +"' and id = "+ rowid +" ";
+            cmd.CommandText = "update IRBook set book_return_date = '"+ dateTimePicker1.Text +"', std_fine = '"+ textBox1.Text + "' where std_enroll = '"+ txtEnterEnroll.Text +"' and id = "+ rowid +" ";
             cmd.ExecuteNonQuery();
+
+
 
             //Increase reutrn book
             SqlCommand cmd1 = new SqlCommand();
@@ -117,5 +182,6 @@ namespace LibraryManagementSystem
         {
             panel2.Visible = false;
         }
+
     }
 }
