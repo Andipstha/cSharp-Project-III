@@ -62,8 +62,8 @@ namespace LibraryManagementSystem
                 cmd.Connection = con;
 
                 con.Open();
-                //cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email,image) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "',@image)";
-                cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "')";
+                cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email,image) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "',@image)";
+                //cmd.CommandText = "insert into NewStudent (sname,enroll,dep,sem,contact,email) values ('" + name + "','" + enroll + "','" + dep + "','" + sem + "'," + mobile + ",'" + email + "')";
 
                 /*Save Image File*/
                 MemoryStream memstr = new MemoryStream();

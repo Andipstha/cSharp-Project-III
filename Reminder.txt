@@ -15,3 +15,7 @@ Add new column name as hidden
 >if hidden = 0 hide else show
 
 Image resolution or width
+
+Show the log of book issued date
+
+

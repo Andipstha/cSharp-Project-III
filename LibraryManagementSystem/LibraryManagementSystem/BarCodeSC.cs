@@ -58,6 +58,7 @@ namespace LibraryManagementSystem
         private void btnClose_Click(object sender, EventArgs e)
         {
             myGlobal.test = textBox1.Text;
+            
             this.Close();
 
         }
@@ -75,7 +76,17 @@ namespace LibraryManagementSystem
             {
                 myGlobal.test = textBox1.Text;
 
+                //videoCaptureDevice.Stop();
+
                 this.Close();
+            }
+        }
+
+        private void BarCodeSC_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (videoCaptureDevice != null)
+            {
+                videoCaptureDevice.Stop();
             }
         }
     }

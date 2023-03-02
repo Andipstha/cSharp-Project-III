@@ -33,14 +33,13 @@
             this.btnScan = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboCamera
             // 
             this.cboCamera.FormattingEnabled = true;
-            this.cboCamera.Location = new System.Drawing.Point(87, 121);
+            this.cboCamera.Location = new System.Drawing.Point(750, 252);
             this.cboCamera.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboCamera.Name = "cboCamera";
             this.cboCamera.Size = new System.Drawing.Size(408, 33);
@@ -48,11 +47,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 867);
+            this.textBox1.Location = new System.Drawing.Point(750, 128);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(600, 56);
+            this.textBox1.Size = new System.Drawing.Size(526, 56);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -63,7 +62,7 @@
             this.btnScan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScan.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.btnScan.ForeColor = System.Drawing.Color.White;
-            this.btnScan.Location = new System.Drawing.Point(1083, 101);
+            this.btnScan.Location = new System.Drawing.Point(1219, 252);
             this.btnScan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(218, 62);
@@ -90,22 +89,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(87, 425);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 128);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1214, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(627, 883);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(1068, 848);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(233, 69);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // BarCodeSC
             // 
@@ -116,13 +104,13 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cboCamera);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BarCodeSC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BarCodeSC";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BarCodeSC_FormClosed);
             this.Load += new System.EventHandler(this.BarCodeSC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -137,6 +125,5 @@
         private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAdd;
     }
 }

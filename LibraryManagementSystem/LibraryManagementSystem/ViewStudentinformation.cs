@@ -30,6 +30,7 @@ namespace LibraryManagementSystem
 
         private void ViewStudentinformation_Load(object sender, EventArgs e)
         {
+
             panel2.Visible = false;
 
             /*Connection to SqlDatabase*/
@@ -41,7 +42,7 @@ namespace LibraryManagementSystem
             cmd.Connection = con;
 
             //cmd.CommandText = "select * from NewStudent ";
-            cmd.CommandText = "select * from NewStudent where hidden = 1 ";
+            cmd.CommandText = "select * from NewStudent where hidden = 0 ";
 
             SqlDataAdapter DA = new SqlDataAdapter(cmd);
             DataSet DS = new DataSet();
@@ -82,6 +83,29 @@ namespace LibraryManagementSystem
             txtContact.Text = DS.Tables[0].Rows[0][5].ToString();
             txtEmail.Text = DS.Tables[0].Rows[0][6].ToString();
             //image2.Image = DS.Tables[0].Rows[0][7].Image();
+            //byte[] imageData = (byte[])DS.Tables[0].Rows[0][7]; // Replace 7 with the index of the image column
+            //using (MemoryStream ms = new MemoryStream(imageData))
+            //{
+            //    Image image = Image.FromStream(ms);
+            //    image2.Image = image;
+            //}
+            if (DS.Tables[0].Rows[0][7] != DBNull.Value)
+            {
+                byte[] imageData = (byte[])DS.Tables[0].Rows[0][7]; // Replace 7 with the index of the image column
+                using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    Image image = Image.FromStream(ms);
+                    image2.Image = image;
+                }
+            }
+            else
+            {
+                // Set a default image or clear the PictureBox control
+                image2.Image = null;
+                // OR
+                // image2.Image = Properties.Resources.defaultImage;
+            }
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -134,7 +158,7 @@ namespace LibraryManagementSystem
                 cmd.Connection = con;
                 //UPDATE NewStudent SET hidden = 1 WHERE hidden = 0;
                 //cmd.CommandText = " delete from NewStudent where stuid = "+rowid+" ";
-                cmd.CommandText = " update NewStudent set hidden = 0 where stuid = " + rowid + " ";
+                cmd.CommandText = " update NewStudent set hidden = 1 where stuid = " + rowid + " "; 
 
                 SqlDataAdapter DA = new SqlDataAdapter(cmd);
                 DataSet DS = new DataSet();

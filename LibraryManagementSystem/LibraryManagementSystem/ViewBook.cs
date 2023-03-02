@@ -28,7 +28,7 @@ namespace LibraryManagementSystem
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "select * from NewBook";
+            cmd.CommandText = "select * from NewBook where hidden = 1";
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -57,7 +57,7 @@ namespace LibraryManagementSystem
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
-            cmd.CommandText = "select * from NewBook where bid = "+bid+" ";
+            cmd.CommandText = "select * from NewBook where bid = "+bid+ " and hidden = 1 ";
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -89,7 +89,7 @@ namespace LibraryManagementSystem
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "select * from NewBook where bName LIKE '"+txtBookName.Text+"%' ";
+                cmd.CommandText = "select * from NewBook where bName LIKE '"+txtBookName.Text+ "%' and hidden = 1 ";
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
@@ -105,7 +105,7 @@ namespace LibraryManagementSystem
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "select * from NewBook";
+                cmd.CommandText = "select * from NewBook where hidden = 1";
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
@@ -156,10 +156,15 @@ namespace LibraryManagementSystem
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "delete from NewBook where bid = "+rowid+" ";
+                //cmd.CommandText = "delete from NewBook where bid = "+rowid+" ";
+
+                cmd.CommandText = " update NewBook set hidden = 1 where bid = " + rowid + " ";
+
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+
+                ViewBook_Load(this, null); //Refresh the table after updating the table
             }
         }
     }

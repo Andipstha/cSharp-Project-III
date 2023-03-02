@@ -38,6 +38,15 @@
             this.txtSearchEnrollment = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.image2 = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -56,15 +65,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -207,6 +207,91 @@
             this.dataGridView1.Size = new System.Drawing.Size(1556, 433);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "stuid";
+            this.Column8.HeaderText = "ID";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 94;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "hidden";
+            this.Column9.HeaderText = "Hidden";
+            this.Column9.MinimumWidth = 10;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Visible = false;
+            this.Column9.Width = 182;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "sname";
+            this.Column1.HeaderText = "Name";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 161;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "enroll";
+            this.Column2.HeaderText = "Enroll";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 146;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "dep";
+            this.Column3.HeaderText = "Department";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 260;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "sem";
+            this.Column4.HeaderText = "Semester";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 209;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "contact";
+            this.Column5.HeaderText = "Contact";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 197;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "email";
+            this.Column6.HeaderText = "Email";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 147;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "image";
+            this.Column7.FillWeight = 30F;
+            this.Column7.HeaderText = "Photo";
+            this.Column7.MinimumWidth = 4;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column7.Width = 156;
             // 
             // panel2
             // 
@@ -434,91 +519,6 @@
             this.label4.Size = new System.Drawing.Size(220, 36);
             this.label4.TabIndex = 0;
             this.label4.Text = "Student Name";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "stuid";
-            this.Column8.HeaderText = "ID";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 94;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "hidden";
-            this.Column9.HeaderText = "Hidden";
-            this.Column9.MinimumWidth = 10;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Visible = false;
-            this.Column9.Width = 180;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "sname";
-            this.Column1.HeaderText = "Name";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 161;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "enroll";
-            this.Column2.HeaderText = "Enroll";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 146;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "dep";
-            this.Column3.HeaderText = "Department";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 260;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "sem";
-            this.Column4.HeaderText = "Semester";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 209;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "contact";
-            this.Column5.HeaderText = "Contact";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 197;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "email";
-            this.Column6.HeaderText = "Email";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 147;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "image";
-            this.Column7.FillWeight = 30F;
-            this.Column7.HeaderText = "Photo";
-            this.Column7.MinimumWidth = 4;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column7.Width = 156;
             // 
             // ViewStudentinformation
             // 

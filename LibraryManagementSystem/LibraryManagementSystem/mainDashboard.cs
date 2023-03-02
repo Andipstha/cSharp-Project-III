@@ -35,7 +35,7 @@ namespace LibraryManagementSystem
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
 
-            SqlCommand cmd1 = new SqlCommand("select count(*) from NewStudent", con);
+            SqlCommand cmd1 = new SqlCommand("select count(*) from NewStudent where hidden = 0", con);
             var count2 = cmd1.ExecuteScalar();
             totalStudent.Text = count2.ToString();
             cmd1.Connection = con;

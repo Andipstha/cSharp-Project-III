@@ -49,6 +49,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lOgoToolStripMenuItem,
@@ -61,8 +62,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(258, 800);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(375, 1086);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,7 +75,7 @@
             this.lOgoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.lOgoToolStripMenuItem.Name = "lOgoToolStripMenuItem";
             this.lOgoToolStripMenuItem.ShowShortcutKeys = false;
-            this.lOgoToolStripMenuItem.Size = new System.Drawing.Size(247, 204);
+            this.lOgoToolStripMenuItem.Size = new System.Drawing.Size(358, 204);
             // 
             // dashboardToolStripMenuItem
             // 
@@ -84,7 +85,7 @@
             this.dashboardToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboardToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
             this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
@@ -99,7 +100,7 @@
             this.booksToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.booksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.booksToolStripMenuItem.Text = "Books";
             // 
             // addNewBookToolStripMenuItem
@@ -107,7 +108,7 @@
             this.addNewBookToolStripMenuItem.Image = global::LibraryManagementSystem.Properties.Resources.addBooks_dash;
             this.addNewBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewBookToolStripMenuItem.Name = "addNewBookToolStripMenuItem";
-            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(245, 56);
+            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(350, 62);
             this.addNewBookToolStripMenuItem.Text = "Add New Book";
             this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
             // 
@@ -116,7 +117,7 @@
             this.viewBooksToolStripMenuItem.Image = global::LibraryManagementSystem.Properties.Resources.viewBooks_dash;
             this.viewBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
-            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(245, 56);
+            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(350, 62);
             this.viewBooksToolStripMenuItem.Text = "View Books";
             this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
             // 
@@ -131,7 +132,7 @@
             this.studentToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.studentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.studentToolStripMenuItem.Text = "Student";
             // 
             // addStudentToolStripMenuItem
@@ -139,7 +140,7 @@
             this.addStudentToolStripMenuItem.Image = global::LibraryManagementSystem.Properties.Resources.addStudent_dash;
             this.addStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(231, 56);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(331, 62);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
@@ -148,7 +149,7 @@
             this.viewStudentToolStripMenuItem.Image = global::LibraryManagementSystem.Properties.Resources.studentView_dash;
             this.viewStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewStudentToolStripMenuItem.Name = "viewStudentToolStripMenuItem";
-            this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(231, 56);
+            this.viewStudentToolStripMenuItem.Size = new System.Drawing.Size(331, 62);
             this.viewStudentToolStripMenuItem.Text = "View Student";
             this.viewStudentToolStripMenuItem.Click += new System.EventHandler(this.viewStudentToolStripMenuItem_Click);
             // 
@@ -160,7 +161,7 @@
             this.issueBooksToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.issueBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.issueBooksToolStripMenuItem.Name = "issueBooksToolStripMenuItem";
-            this.issueBooksToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.issueBooksToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.issueBooksToolStripMenuItem.Text = "Issue Books";
             this.issueBooksToolStripMenuItem.Click += new System.EventHandler(this.issueBooksToolStripMenuItem_Click);
             // 
@@ -172,7 +173,7 @@
             this.returnBooksToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.returnBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.returnBooksToolStripMenuItem.Name = "returnBooksToolStripMenuItem";
-            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.returnBooksToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.returnBooksToolStripMenuItem.Text = "Return Books";
             this.returnBooksToolStripMenuItem.Click += new System.EventHandler(this.returnBooksToolStripMenuItem_Click);
             // 
@@ -184,7 +185,7 @@
             this.completeBookDetailToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.completeBookDetailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.completeBookDetailToolStripMenuItem.Name = "completeBookDetailToolStripMenuItem";
-            this.completeBookDetailToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.completeBookDetailToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.completeBookDetailToolStripMenuItem.Text = "Complete Book Detail";
             this.completeBookDetailToolStripMenuItem.Click += new System.EventHandler(this.completeBookDetailToolStripMenuItem_Click);
             // 
@@ -196,31 +197,32 @@
             this.exitToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.exitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(247, 54);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(358, 54);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // mainPanel
             // 
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(258, 0);
+            this.mainPanel.Location = new System.Drawing.Point(375, 0);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(822, 800);
+            this.mainPanel.Size = new System.Drawing.Size(1245, 1086);
             this.mainPanel.TabIndex = 1;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(173)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1080, 800);
+            this.ClientSize = new System.Drawing.Size(1620, 1086);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
